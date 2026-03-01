@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NASA Image Search | Space Explorer</title>
+    <link rel="stylesheet" href="/styles/solarSystem.css">
+</head>
+<body>
+
+<nav>
+    <h1>NASA Explorer</h1>
+    <a href="/index.html" class=" btn-ghost">← APOD</a>
+</nav>
+
+<section class="hero">
+    <h2>Archivo de Imágenes</h2>
+    <p>Busca entre millones de imágenes del archivo histórico de la NASA</p>
+</section>
+
+<div class="search-wrapper">
+    <div class="search-bar">
+        <span class="search-icon">🔭</span>
+        <input class="search" id="search" placeholder="Busca un planeta, galaxia, misión...">
+        <button id="btn-Input" class="btn btn-primary">Buscar</button>
+    </div>
+</div>
+
+<div id="statusContainer"></div>
+<div class="container" id="container"></div>
+
+
+<div class="toast" id="toast"></div>
+
+<script src="/scripts/solar.js"></script>
+</body>
+</html>
