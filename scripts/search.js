@@ -12,11 +12,13 @@ function planets(){
             main.innerHTML = "";
             data.collection.items.forEach(item => {
                 const imgUrl = item.links[0].href;
+                const date = item.data[0].date_created;
                 const title = item.data[0].title;
                 const content = document.createElement("div");
                 content.classList.add("content")
                 content.innerHTML = `
                     <img src="${imgUrl}">
+                    <h4>${date}</h4>
                     <h3>${title}</h3>       
                 `;
                 main.appendChild(content);
